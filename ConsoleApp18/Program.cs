@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
 namespace ConsoleApp18
 {
@@ -7,7 +6,7 @@ namespace ConsoleApp18
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RuntimeInformation.OSDescription.Contains("Ubuntu", StringComparison.InvariantCultureIgnoreCase));
+            Console.WriteLine(Microsoft.DotNet.PlatformAbstractions.RuntimeEnvironment.OperatingSystemPlatform);
             Console.ReadLine();
         }
     }
